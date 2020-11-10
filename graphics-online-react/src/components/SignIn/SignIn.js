@@ -1,23 +1,23 @@
 import React, { Component } from "react";
-import './SignIn.scss'
+import styles from './SignIn.module.scss'
 
 export default class Login extends Component {
     render() {
         return (
-            <div className="form-page-wrapper">
+            <div className={styles["form-page-wrapper"]}>
                 <form>
                 <h3>Sign In</h3>
-                    <input type="email" className="email" placeholder="Enter email" />
-                    <input type="password" className="password" placeholder="Enter password" />
+                    <input type="email" className={styles.email} placeholder="Enter email" />
+                    <input type="password" className={styles.email} placeholder="Enter password" />
                 
-                    <div className="custom-control-custom-checkbox">
+                    <div className={styles["custom-control-custom-checkbox"]}>
                         <input type="checkbox" className="custom-control-input" id="customCheck1" />
                         <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
                     </div>
 
                 <button type="submit" className="btn btn-primary btn-block">Submit</button>
 
-                <div className="to-sign-up">
+                <div className={styles["to-sign-up"]}>
                     <p className="create-account-text-left">
                         Don't have an <a href="#">account?</a>
                     </p>
