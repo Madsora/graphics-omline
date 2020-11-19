@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import styles from './SignUp.module.scss'
 
-export default class SignUp extends Component {
+export default class SignUpEmployer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { onClicked: false};
+      }
     render() {
         return (
             <div className={styles["form-page-wrapper"]}>
@@ -13,7 +17,7 @@ export default class SignUp extends Component {
                     <input type="email" className={styles["form-control"]} placeholder="Enter email" />
                     <input type="password" className={styles["form-control"]} placeholder="Enter password" />
 
-                    <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+                    <button className="btn btn-primary btn-block">Sign Up</button>
                 </form>
             </div>
         );
