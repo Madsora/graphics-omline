@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from './SignIn.module.scss'
+import {Link} from "react-router-dom"
 
 export default class Login extends Component {
     render() {
@@ -19,7 +20,7 @@ export default class Login extends Component {
 
                 <div className={styles["to-sign-up"]}>
                     <p className="create-account-text-left">
-                        Don't have an <a href="#">account?</a>
+                        Don't have an <Link to="/sign-up">account?</Link>
                     </p>
                     <p className="forgot-password-text-right">
                         Forgot <a href="#">password?</a>

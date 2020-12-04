@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import styles from './SignUp.module.scss'
-
 export default class SignUpEmployer extends Component {
     constructor(props) {
         super(props);
-        this.state = { onClicked: false};
+        this.state = {};
+        this.handleSubmit = this.handleSubmit.bind(this);
       }
+    handleSubmit=() =>{
+        this.setState({users: [{}]})
+        this.props.history.push('/');
+    }
     render() {
         return (
             <div className={styles["form-page-wrapper"]}>
@@ -16,8 +20,9 @@ export default class SignUpEmployer extends Component {
                     <input type="text" className={styles["form-control"]} placeholder="Last name" />
                     <input type="email" className={styles["form-control"]} placeholder="Enter email" />
                     <input type="password" className={styles["form-control"]} placeholder="Enter password" />
+                    <input type="text" className={styles["form-control"]} placeholder="Enter name of your organization" />
 
-                    <button className="btn btn-primary btn-block">Sign Up</button>
+                    <button onClick={(e) => this.handleSubmit()} className="btn btn-primary btn-block">Sign Up</button>
                 </form>
             </div>
         );
