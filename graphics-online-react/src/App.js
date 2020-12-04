@@ -1,15 +1,21 @@
 import React from 'react';
 import './App.css';
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import SignIn from './components/SignIn/SignIn'
+import SignUpMain from './components/SignUp/SignUpMain'
+import SignUpEmployer from "./components/SignUp/SignUpEmployer"
+import SignUpEmployee from "./components/SignUp/SignUpEmployee"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-                {/* <Route path='/dashboard' component={Dashboard} /> */}
-                <Route path='/login' component={SignIn}/>
-                {/* <SignIn /> */}
+                <Switch>
+                  <Route path='/login' component={SignIn}/>
+                  <Route path='/sign-up/employer' component={SignUpEmployer}/>
+                  <Route path='/sign-up/employee' component={SignUpEmployee}/>
+                  <Route path='/sign-up' component={SignUpMain}/>
+                </Switch>
       </header>
     </div>
   );
