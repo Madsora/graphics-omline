@@ -19,16 +19,16 @@ export default class MainPage extends Component {
             <div>
                 <Navbar></Navbar>
                 <div className={styles["block-hello"]}>
-                    <ContentPage text={`Welcom, ${this.state.username}!`} role={this.state.role}></ContentPage>
+                    <ContentPage text={`Welcom, ${this.state.username}!`} role={0} nameOfLink={''} link={''}></ContentPage>
                 </div>
                 <div className={styles["block-create"]}>
-                    <ContentPage text={'You can create a new graphic..'} role={this.state.role}></ContentPage>
+                    <ContentPage text={'You can create a new graphic..'} role={this.state.role} nameOfLink={'Create..'} link={'/create'}></ContentPage>
                 </div>
                 <div className={styles["block-graph"]}>
-                    <ContentPage text={'Let\'s have a look at yours graphic..'} role={this.state.role}></ContentPage>
+                    <ContentPage text={'Let\'s have a look at yours graphic..'} role={this.state.role} nameOfLink={'Look..'} link={'/graph'}></ContentPage>
                 </div>
                 <div className={styles["block-bas"]}>
-                    <ContentPage text={'What about Bonuses&Penalties? ;)'} role={this.state.role}></ContentPage>
+                    <ContentPage text={'What about Bonuses&Penalties? ;)'} role={this.state.role} nameOfLink={'B&P'} link={'/bas'}></ContentPage>
                 </div>                
             </div>
         )

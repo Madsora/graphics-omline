@@ -18,8 +18,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: larger;
         border-radius: 25px;
+
+        .link {
+            margin: 1%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: grey;
+            text-decoration: none;
+            &:hover {
+                color: black;
+            }
+        }
     }
 }

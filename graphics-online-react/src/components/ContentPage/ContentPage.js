@@ -14,7 +14,7 @@ export default class MainPage extends Component {
                     {this.props.text}
                     {(this.props.role == 1) ?
                     <div>
-                    <Link to="/">Home</Link>
+                    <Link className={styles.link} to={this.props.link}>{this.props.nameOfLink}</Link>
                     </div>
                     : <div></div>}
                 </div>
