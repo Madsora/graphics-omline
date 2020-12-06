@@ -5,6 +5,7 @@ import SignIn from './components/SignIn/SignIn'
 import SignUpMain from './components/SignUp/SignUpMain'
 import SignUpEmployer from "./components/SignUp/SignUpEmployer"
 import SignUpEmployee from "./components/SignUp/SignUpEmployee"
+import MainPage from './components/MainPage/MainPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
                   <Route path='/sign-up/employer' component={SignUpEmployer}/>
                   <Route path='/sign-up/employee' component={SignUpEmployee}/>
                   <Route path='/sign-up' component={SignUpMain}/>
+                  <Route path='/' component={MainPage}/>
                 </Switch>
       </header>
     </div>

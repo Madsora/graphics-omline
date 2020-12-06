@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-wrapper {
+    background-color: #a6dcef;
+    display: flex;
+    height: 8vh;
+    width: 100vw;
+
+    .name {
+        margin: 1%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+    }
+
+    .link {
+        margin: 1%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: grey;
+        text-decoration: none;
+        &:hover {
+            color: black;
+            font-size: 110%;
+        }
+    }
+}
