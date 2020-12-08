@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from '../Navbar/Navbar'
 import styles from './HomePage.module.scss'
 
 export default class HomePage extends Component
@@ -12,7 +13,7 @@ export default class HomePage extends Component
     {
         return(
             <div>
-                
+                <Navbar/>
             </div>
         );
     }
