@@ -19,7 +19,7 @@ export default class MainPage extends Component {
             <div>
                 <Navbar></Navbar>
                 <div className={styles["block-hello"]}>
-                    <ContentPage text={`Welcom, ${this.state.username}!`} role={0} nameOfLink={''} link={''}></ContentPage>
+                    <ContentPage text={`Welcome, ${this.state.username}!`} role={0} nameOfLink={''} link={''}></ContentPage>
                 </div>
                 <div className={styles["block-create"]}>
                     <ContentPage text={'You can create a new graphic..'} role={this.state.role} nameOfLink={'Create..'} link={'/create'}></ContentPage>
@@ -29,7 +29,11 @@ export default class MainPage extends Component {
                 </div>
                 <div className={styles["block-bas"]}>
                     <ContentPage text={'What about Bonuses&Penalties? ;)'} role={this.state.role} nameOfLink={'B&P'} link={'/bas'}></ContentPage>
-                </div>                
+                </div>
+                <div className={styles["block-us"]}>
+                    <ContentPage text={'This website is designed to simplify and automate work with shift schedules for both employers and employees. Our team - Anna&Daryna.'} role={0} nameOfLink={''} link={''}></ContentPage>
+                </div>
+                               
             </div>
         )
     }
