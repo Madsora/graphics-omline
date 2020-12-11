@@ -7,6 +7,7 @@ import SignUpEmployer from "./components/SignUp/SignUpEmployer"
 import SignUpEmployee from "./components/SignUp/SignUpEmployee"
 import MainPage from './components/MainPage/MainPage';
 import HomePage from './components/HomePage/HomePage';
+import Graphics from './components/Graphics/Graphics';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                   <Route path='/sign-up/employee' component={SignUpEmployee}/>
                   <Route path='/sign-up' component={SignUpMain}/>
                   <Route path='/profile' component={HomePage}/>
+                  <Route path='/graphics' component={Graphics}/>
                   <Route path='/' component={MainPage}/>
                 </Switch>
       </header>

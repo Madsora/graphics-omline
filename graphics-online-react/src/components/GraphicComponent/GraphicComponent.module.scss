@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.graphic-component-wrapper{
+    display: grid;
+    grid-template-rows: 15% 1fr;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px  rgba(197, 197, 197, 0.5);
+    border-radius:25px;
+    padding: 20px;
+    .workers-list-block{
+        grid-row: 2;
+        padding: 20px;
+        border-top:1px solid #cccccc;
+        ul{
+            li{
+                font-size: 1.3rem;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+.graphic-component-wrapper:hover{
+    box-shadow: 4px 4px 5px  rgba(110, 110, 110, 0.5);
+}
