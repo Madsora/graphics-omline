@@ -13,9 +13,9 @@ export default class GraphicsEmployee extends Component {
                 <div className={styles["wrapper"]}>
                     <div className={styles.content}>
                         <img src={avatar} alt="profile photo" className={styles.avatar}/>
-                        <div className={styles["name-block"]}>anton valetievich gogol - dolzhnost</div>
+                        <div className={styles["name-block"]}>Nicole Brown - waitress</div>
                         <WeeklyGraphicEmployee></WeeklyGraphicEmployee>
-                        <Link to="/graphic-employer" className={styles.link}>see main graphic..</Link>
+                        <Link to="/graphic-employer" className={styles.link}>Look at extended graphic..</Link>
                     </div>
                 </div>
             </div>
