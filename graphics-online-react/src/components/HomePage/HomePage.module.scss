@@ -1,4 +1,7 @@
 $color-primary: #4ba5fa;
+*{
+    font-size: 16px;
+}
 .wrapper{
     display: flex;
     height: 100vh;
@@ -8,42 +11,43 @@ $color-primary: #4ba5fa;
     flex-flow: column wrap;
     .wrapper-profile-card{
         display: flex;
-        height: 92vh;
+        height: 92%;
         align-items: center;
         justify-content: center;
         .profile-card{
             display: flex;
             box-shadow: 0 3px 3px rgba(0,0,0,0.5);
-            height: 65vh;
-            width: 50vw;
+            height: 65%;
+            width: 50%;
             border: 2px solid rgb(83, 83, 83);
             border-radius:25px;
             background-color: #ffffff;
-            padding: 50px 50px 20px 20px;
+            padding: 50px 30px 20px 20px;
             .profile-image-block{
                 h1{
                     font-size: 2.5rem;
                     padding-bottom: 20px;
                 }
                 display: flex;
-                flex-flow: column wrap;
+                flex-flow: wrap;
                 align-items: flex-start;
-                padding: 20px;
+                padding-right: 20px;
                 background-color: #ffffff;
-                width: 23vw;
-                height: 55vh;
+                width: 45%;
+                height: 100%;
                 border-right:1px solid #cccccc;
                 .buttons-block{
                     margin-top: 20px;
-                    width: 22vw;
+                    height: 30%;
+                    width: 100%;
                     display: flex;
                     align-items: center;
                     flex-flow: column wrap;
                     button {
                         font-size: 1.3rem;
                         margin: 5px;
-                        height: 50px;
-                        width: 240px;
+                        height: 30%;
+                        width: 70%;
                         background-color: #cccccc;
                         color: #ffffff;
                         border-color: #cccccc;
@@ -66,15 +70,18 @@ $color-primary: #4ba5fa;
             }
             .profile-info-block{
                 background-color: #ffffff;
-                padding-top: 80px;
                 padding-left: 20px;
-                width: 27vw;
+                width: 55%;
+                height: 100%;
                 .info-block{
+
                     width: 20vw;
+                    height: 15%;
+                    margin: 10px 0;
                     border-bottom:1px solid #cccccc;
                     padding-bottom: 5px;
                     .info-field{
-                        margin: 10px 0;
+                        margin: 15px 0;
                         color: rgb(105, 105, 105);
                         font-size: 1.5rem;
                     }

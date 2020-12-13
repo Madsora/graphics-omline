@@ -25,10 +25,9 @@ export default class HomePage extends Component
                     <div className = {styles["profile-card"]}>
                         <div className = {styles["profile-image-block"]}>
                             <h1>YOUR PROFILE</h1>
-                            <img className={styles['avatar']} src={avatar} alt="Your avatar" width="400px" height="300px"/>
+                            <img className={styles['avatar']} src={avatar} alt="Your avatar" width="100%" height="60%"/>
                             <div className={styles["buttons-block"]}>
                                 <button>Change photo</button>
-                                <button>Reset password</button>
                             </div>
                         </div>
                         <div className = {styles["profile-info-block"]}>
