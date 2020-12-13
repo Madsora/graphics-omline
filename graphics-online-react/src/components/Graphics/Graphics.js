@@ -7,8 +7,9 @@ export default class Graphics extends Component{
     constructor(props)
     {
         super(props);
-        this.state = {weekArray:['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY'],
-        workersArray: [{worker:"First",time:"00:00-00:00"},{worker:"Second",time:"00:00-00:00"},{worker:"Third",time:"00:00-00:00"}]}
+        this.state = {dayArray: [{day:"MONDAY", workers:["1", "2", "3"]}, {day:"TUESDAY", workers:["4", "5", "6"]}, {day:"WEDNESDAY", workers:["7", "8", "9"]},
+        {day:"THURSDAY", workers:["10", "11", "12"]},{day:"FRIDAY", workers:["13", "14", "15"]},{day:"SATURDAY", workers:["16", "17", "18"]},
+        {day:"SUNDAY", workers:["19", "20", "21"]}]}
     }
     render()
     {
@@ -17,9 +18,9 @@ export default class Graphics extends Component{
                 <Navbar/>
                 <div className={styles["main-content-wrapper"]}>
                 {
-                    this.state.weekArray.map((val,i) =>{
+                    this.state.dayArray.map((val,i) =>{
                           return(
-                              <GraphicComponent  day={val} />
+                              <GraphicComponent day={val.day} workers={val.workers}/>
                             )}
                     )}
                 </div>

@@ -14,9 +14,9 @@ export default class Graphics extends Component{
                 <h1 align="center">{this.props.day}</h1>
                 <div className={styles['workers-list-block']}>
                     <ul>
-                        <li>Alan Walker, 14:00-16:00</li>
-                        <li>fghjl</li>
-                        <li>fghjl</li>
+                        <li>{this.props.workers[0]}</li>
+                        <li>{this.props.workers[1]}</li>
+                        <li>{this.props.workers[2]}</li>
                     </ul>
                 </div>
             </div>
