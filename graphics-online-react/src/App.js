@@ -7,6 +7,8 @@ import SignUpEmployer from "./components/SignUp/SignUpEmployer"
 import SignUpEmployee from "./components/SignUp/SignUpEmployee"
 import MainPage from './components/MainPage/MainPage';
 import HomePage from './components/HomePage/HomePage';
+import GraphicsEmployee from './components/GraphicsEmployee/GraphicsEmployee'
+import CreateGraphic from './components/CreateGraphic/CreateGraphic';
 import Graphics from './components/Graphics/Graphics';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
                   <Route path='/sign-up/employee' component={SignUpEmployee}/>
                   <Route path='/sign-up' component={SignUpMain}/>
                   <Route path='/profile' component={HomePage}/>
+                  <Route path='/graphics-employee' component={GraphicsEmployee}/>
+                  <Route path='/create-graphic' component={CreateGraphic}/>
                   <Route path='/graphics' component={Graphics}/>
                   <Route path='/' component={MainPage}/>
                 </Switch>
