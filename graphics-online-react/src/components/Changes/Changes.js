@@ -17,6 +17,9 @@ export default class HomePage extends Component
                 <div className={styles["change-wrapper"]}>
                     <div className={styles["change-card"]}>
                         <h1 align="center">CHANGE YOUR WORK SHIFT</h1>
+                        <div className={styles["content-changes"]}>
+                            <input type={Date}></input>
+                        </div>
                     </div>
                 </div>
             </div>
