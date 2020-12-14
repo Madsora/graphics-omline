@@ -10,6 +10,7 @@ import HomePage from './components/HomePage/HomePage';
 import GraphicsEmployee from './components/GraphicsEmployee/GraphicsEmployee'
 import CreateGraphic from './components/CreateGraphic/CreateGraphic';
 import Graphics from './components/Graphics/Graphics';
+import Changes from './components/Changes/Changes';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                   <Route path='/graphics-employee' component={GraphicsEmployee}/>
                   <Route path='/create-graphic' component={CreateGraphic}/>
                   <Route path='/graphics' component={Graphics}/>
+                  <Route path='/changes' component={Changes}/>
                   <Route path='/' component={MainPage}/>
                 </Switch>
       </header>
